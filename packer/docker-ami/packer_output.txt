@@ -1,0 +1,229 @@
+[1;32mamazon-linux-hvm-docker-ce-base output will be in this color.[0m
+
+[1;32m==> amazon-linux-hvm-docker-ce-base: Prevalidating AMI Name...[0m
+[1;32m==> amazon-linux-hvm-docker-ce-base: Inspecting the source AMI...[0m
+[1;32m==> amazon-linux-hvm-docker-ce-base: Creating temporary keypair: packer 5b0ad87b-5a8f-0759-5dc8-d1cb25a1e5e4[0m
+[1;32m==> amazon-linux-hvm-docker-ce-base: Creating temporary security group for this instance...[0m
+[1;32m==> amazon-linux-hvm-docker-ce-base: Authorizing access to port 22 the temporary security group...[0m
+[1;32m==> amazon-linux-hvm-docker-ce-base: Launching a source AWS instance...[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Instance ID: i-06a6b9ab0e5aa22d9[0m
+[1;32m==> amazon-linux-hvm-docker-ce-base: Waiting for instance (i-06a6b9ab0e5aa22d9) to become ready...[0m
+[1;32m==> amazon-linux-hvm-docker-ce-base: Waiting for SSH to become available...[0m
+[1;32m==> amazon-linux-hvm-docker-ce-base: Connected to SSH![0m
+[1;32m==> amazon-linux-hvm-docker-ce-base: Uploading scripts/bootstrap/docker.sh => /tmp/docker.sh[0m
+[1;32m==> amazon-linux-hvm-docker-ce-base: Provisioning with shell script: /tmp/packer-shell308428081[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: root[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: total 24K[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: drwxrwxrwt  4 root     root     4.0K May 27 16:11 .[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: dr-xr-xr-x 25 root     root     4.0K May 27 16:11 ..[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: -rwxr-xr-x  1 ec2-user ec2-user  280 May 27 16:11 docker.sh[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: drwxr-xr-x  2 root     root     4.0K May 27 16:11 hsperfdata_root[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: drwxrwxrwt  2 root     root     4.0K May 27 16:10 .ICE-unix[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: -rwxr-xr-x  1 ec2-user ec2-user   72 May 27 16:11 script_3766.sh[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Loaded plugins: priorities, update-motd, upgrade-helper[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Resolving Dependencies[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: --> Running transaction check[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: ---> Package ntp.x86_64 0:4.2.6p5-44.36.amzn1 will be updated[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: ---> Package ntp.x86_64 0:4.2.8p11-1.37.amzn1 will be an update[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: ---> Package ntpdate.x86_64 0:4.2.6p5-44.36.amzn1 will be updated[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: ---> Package ntpdate.x86_64 0:4.2.8p11-1.37.amzn1 will be an update[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: ---> Package openssh.x86_64 0:7.4p1-11.68.amzn1 will be updated[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: ---> Package openssh.x86_64 0:7.4p1-16.69.amzn1 will be an update[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: ---> Package openssh-clients.x86_64 0:7.4p1-11.68.amzn1 will be updated[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: ---> Package openssh-clients.x86_64 0:7.4p1-16.69.amzn1 will be an update[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: ---> Package openssh-server.x86_64 0:7.4p1-11.68.amzn1 will be updated[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: ---> Package openssh-server.x86_64 0:7.4p1-16.69.amzn1 will be an update[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: ---> Package openssl.x86_64 1:1.0.2k-8.107.amzn1 will be updated[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: ---> Package openssl.x86_64 1:1.0.2k-12.109.amzn1 will be an update[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: ---> Package rpcbind.x86_64 0:0.2.0-13.9.amzn1 will be updated[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: ---> Package rpcbind.x86_64 0:0.2.0-13.10.amzn1 will be an update[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: --> Finished Dependency Resolution[0m
+[0;32m    amazon-linux-hvm-docker-ce-base:[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Dependencies Resolved[0m
+[0;32m    amazon-linux-hvm-docker-ce-base:[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: ================================================================================[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Package            Arch      Version                     Repository       Size[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: ================================================================================[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Updating:[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: ntp                x86_64    4.2.8p11-1.37.amzn1         amzn-updates    1.0 M[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: ntpdate            x86_64    4.2.8p11-1.37.amzn1         amzn-updates     88 k[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: openssh            x86_64    7.4p1-16.69.amzn1           amzn-updates    639 k[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: openssh-clients    x86_64    7.4p1-16.69.amzn1           amzn-updates    1.1 M[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: openssh-server     x86_64    7.4p1-16.69.amzn1           amzn-updates    511 k[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: openssl            x86_64    1:1.0.2k-12.109.amzn1       amzn-updates    1.8 M[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: rpcbind            x86_64    0.2.0-13.10.amzn1           amzn-updates     56 k[0m
+[0;32m    amazon-linux-hvm-docker-ce-base:[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Transaction Summary[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: ================================================================================[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Upgrade  7 Packages[0m
+[0;32m    amazon-linux-hvm-docker-ce-base:[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Total download size: 5.2 M[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Downloading packages:[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: --------------------------------------------------------------------------------[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Total                                              5.0 MB/s | 5.2 MB  00:01[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Running transaction check[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Running transaction test[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Transaction test succeeded[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Running transaction[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Updating   : 1:openssl-1.0.2k-12.109.amzn1.x86_64                        1/14[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Updating   : openssh-7.4p1-16.69.amzn1.x86_64                            2/14[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Updating   : ntpdate-4.2.8p11-1.37.amzn1.x86_64                          3/14[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Updating   : ntp-4.2.8p11-1.37.amzn1.x86_64                              4/14[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Updating   : openssh-server-7.4p1-16.69.amzn1.x86_64                     5/14[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: warning: /etc/ssh/sshd_config created as /etc/ssh/sshd_config.rpmnew[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Updating   : openssh-clients-7.4p1-16.69.amzn1.x86_64                    6/14[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Updating   : rpcbind-0.2.0-13.10.amzn1.x86_64                            7/14[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Cleanup    : openssh-clients-7.4p1-11.68.amzn1.x86_64                    8/14[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Cleanup    : openssh-server-7.4p1-11.68.amzn1.x86_64                     9/14[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Cleanup    : ntp-4.2.6p5-44.36.amzn1.x86_64                             10/14[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Cleanup    : ntpdate-4.2.6p5-44.36.amzn1.x86_64                         11/14[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Cleanup    : openssh-7.4p1-11.68.amzn1.x86_64                           12/14[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Cleanup    : 1:openssl-1.0.2k-8.107.amzn1.x86_64                        13/14[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Cleanup    : rpcbind-0.2.0-13.9.amzn1.x86_64                            14/14[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Verifying  : openssh-7.4p1-16.69.amzn1.x86_64                            1/14[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Verifying  : ntp-4.2.8p11-1.37.amzn1.x86_64                              2/14[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Verifying  : openssh-server-7.4p1-16.69.amzn1.x86_64                     3/14[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Verifying  : 1:openssl-1.0.2k-12.109.amzn1.x86_64                        4/14[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Verifying  : openssh-clients-7.4p1-16.69.amzn1.x86_64                    5/14[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Verifying  : ntpdate-4.2.8p11-1.37.amzn1.x86_64                          6/14[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Verifying  : rpcbind-0.2.0-13.10.amzn1.x86_64                            7/14[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Verifying  : rpcbind-0.2.0-13.9.amzn1.x86_64                             8/14[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Verifying  : ntpdate-4.2.6p5-44.36.amzn1.x86_64                          9/14[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Verifying  : 1:openssl-1.0.2k-8.107.amzn1.x86_64                        10/14[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Verifying  : openssh-clients-7.4p1-11.68.amzn1.x86_64                   11/14[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Verifying  : openssh-server-7.4p1-11.68.amzn1.x86_64                    12/14[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Verifying  : openssh-7.4p1-11.68.amzn1.x86_64                           13/14[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Verifying  : ntp-4.2.6p5-44.36.amzn1.x86_64                             14/14[0m
+[0;32m    amazon-linux-hvm-docker-ce-base:[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Updated:[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: ntp.x86_64 0:4.2.8p11-1.37.amzn1[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: ntpdate.x86_64 0:4.2.8p11-1.37.amzn1[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: openssh.x86_64 0:7.4p1-16.69.amzn1[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: openssh-clients.x86_64 0:7.4p1-16.69.amzn1[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: openssh-server.x86_64 0:7.4p1-16.69.amzn1[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: openssl.x86_64 1:1.0.2k-12.109.amzn1[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: rpcbind.x86_64 0:0.2.0-13.10.amzn1[0m
+[0;32m    amazon-linux-hvm-docker-ce-base:[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Complete![0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Loaded plugins: priorities, update-motd, upgrade-helper[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Existing lock /var/run/yum.pid: another copy is running as pid 2918.[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Another app is currently holding the yum lock; waiting for it to exit...[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: The other application is: yum[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Memory :  43 M RSS (290 MB VSZ)[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Started: Sun May 27 16:11:26 2018 - 00:01 ago[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: State  : Running, pid: 2918[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Resolving Dependencies[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: --> Running transaction check[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: ---> Package docker.x86_64 0:17.12.1ce-1.135.amzn1 will be installed[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: --> Processing Dependency: xfsprogs for package: docker-17.12.1ce-1.135.amzn1.x86_64[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: --> Processing Dependency: libseccomp.so.2()(64bit) for package: docker-17.12.1ce-1.135.amzn1.x86_64[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: --> Processing Dependency: libltdl.so.7()(64bit) for package: docker-17.12.1ce-1.135.amzn1.x86_64[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: --> Running transaction check[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: ---> Package libseccomp.x86_64 0:2.3.1-2.4.amzn1 will be installed[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: ---> Package libtool-ltdl.x86_64 0:2.4.2-20.4.8.5.32.amzn1 will be installed[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: ---> Package xfsprogs.x86_64 0:4.5.0-9.21.amzn1 will be installed[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: --> Finished Dependency Resolution[0m
+[0;32m    amazon-linux-hvm-docker-ce-base:[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Dependencies Resolved[0m
+[0;32m    amazon-linux-hvm-docker-ce-base:[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: ================================================================================[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Package          Arch       Version                        Repository     Size[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: ================================================================================[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Installing:[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: docker           x86_64     17.12.1ce-1.135.amzn1          amzn-main      34 M[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Installing for dependencies:[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: libseccomp       x86_64     2.3.1-2.4.amzn1                amzn-main      79 k[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: libtool-ltdl     x86_64     2.4.2-20.4.8.5.32.amzn1        amzn-main      51 k[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: xfsprogs         x86_64     4.5.0-9.21.amzn1               amzn-main     1.7 M[0m
+[0;32m    amazon-linux-hvm-docker-ce-base:[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Transaction Summary[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: ================================================================================[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Install  1 Package (+3 Dependent packages)[0m
+[0;32m    amazon-linux-hvm-docker-ce-base:[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Total download size: 36 M[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Installed size: 114 M[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Downloading packages:[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: --------------------------------------------------------------------------------[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Total                                              9.0 MB/s |  36 MB  00:04[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Running transaction check[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Running transaction test[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Transaction test succeeded[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Running transaction[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Installing : libseccomp-2.3.1-2.4.amzn1.x86_64                            1/4[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Installing : libtool-ltdl-2.4.2-20.4.8.5.32.amzn1.x86_64                  2/4[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Installing : xfsprogs-4.5.0-9.21.amzn1.x86_64                             3/4[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Installing : docker-17.12.1ce-1.135.amzn1.x86_64                          4/4[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Verifying  : xfsprogs-4.5.0-9.21.amzn1.x86_64                             1/4[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Verifying  : docker-17.12.1ce-1.135.amzn1.x86_64                          2/4[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Verifying  : libtool-ltdl-2.4.2-20.4.8.5.32.amzn1.x86_64                  3/4[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Verifying  : libseccomp-2.3.1-2.4.amzn1.x86_64                            4/4[0m
+[0;32m    amazon-linux-hvm-docker-ce-base:[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Installed:[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: docker.x86_64 0:17.12.1ce-1.135.amzn1[0m
+[0;32m    amazon-linux-hvm-docker-ce-base:[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Dependency Installed:[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: libseccomp.x86_64 0:2.3.1-2.4.amzn1[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: libtool-ltdl.x86_64 0:2.4.2-20.4.8.5.32.amzn1[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: xfsprogs.x86_64 0:4.5.0-9.21.amzn1[0m
+[0;32m    amazon-linux-hvm-docker-ce-base:[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Complete![0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Starting cgconfig service: [  OK  ][0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Unable to find image 'httpd:latest' locally[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Starting docker:	.[  OK  ][0m
+[0;32m    amazon-linux-hvm-docker-ce-base: latest: Pulling from library/httpd[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: 3d77ce4481b1: Pulling fs layer[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: 73674f4d9403: Pulling fs layer[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: d266646f40bd: Pulling fs layer[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: ce7b0dda0c9f: Pulling fs layer[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: 01729050d692: Pulling fs layer[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: 014246127c67: Pulling fs layer[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: 7cd2e04cf570: Pulling fs layer[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: ce7b0dda0c9f: Waiting[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: 01729050d692: Waiting[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: 014246127c67: Waiting[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: 7cd2e04cf570: Waiting[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: d266646f40bd: Verifying Checksum[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: d266646f40bd: Download complete[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: 73674f4d9403: Verifying Checksum[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: 73674f4d9403: Download complete[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: ce7b0dda0c9f: Verifying Checksum[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: ce7b0dda0c9f: Download complete[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: 014246127c67: Verifying Checksum[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: 014246127c67: Download complete[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: 7cd2e04cf570: Verifying Checksum[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: 7cd2e04cf570: Download complete[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: 3d77ce4481b1: Verifying Checksum[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: 3d77ce4481b1: Download complete[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: 01729050d692: Verifying Checksum[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: 01729050d692: Download complete[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: 3d77ce4481b1: Pull complete[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: 73674f4d9403: Pull complete[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: d266646f40bd: Pull complete[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: ce7b0dda0c9f: Pull complete[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: 01729050d692: Pull complete[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: 014246127c67: Pull complete[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: 5baa4b783e929a8fefd8e564ee5258b069a8ada1d7f90ea3046c43a576ebf5db[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: 7cd2e04cf570: Pull complete[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Digest: sha256:f4610c3a1a7da35072870625733fd0384515f7e912c6223d4a48c6eb749a8617[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Status: Downloaded newer image for httpd:latest[0m
+[1;32m==> amazon-linux-hvm-docker-ce-base: Stopping the source instance...[0m
+[1;32m==> amazon-linux-hvm-docker-ce-base: Waiting for the instance to stop...[0m
+[1;32m==> amazon-linux-hvm-docker-ce-base: Creating the AMI: amazon-linux-hvm-docker-ce-base 1527437435[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: AMI: ami-079efc78[0m
+[1;32m==> amazon-linux-hvm-docker-ce-base: Waiting for AMI to become ready...[0m
+[1;32m==> amazon-linux-hvm-docker-ce-base: Modifying attributes on AMI (ami-079efc78)...[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Modifying: description[0m
+[1;32m==> amazon-linux-hvm-docker-ce-base: Adding tags to AMI (ami-079efc78)...[0m
+[0;32m    amazon-linux-hvm-docker-ce-base: Adding tag: "ami": "amazon-linux-hvm-docker-ce-base"[0m
+[1;32m==> amazon-linux-hvm-docker-ce-base: Tagging snapshot: snap-06e3d76de30a37552[0m
+[1;32m==> amazon-linux-hvm-docker-ce-base: Terminating the source AWS instance...[0m
+[1;32m==> amazon-linux-hvm-docker-ce-base: Cleaning up any extra volumes...[0m
+[1;32m==> amazon-linux-hvm-docker-ce-base: No volumes to clean up, skipping[0m
+[1;32m==> amazon-linux-hvm-docker-ce-base: Deleting temporary security group...[0m
+[1;32m==> amazon-linux-hvm-docker-ce-base: Deleting temporary keypair...[0m
+[1;32mBuild 'amazon-linux-hvm-docker-ce-base' finished.[0m
+
+==> Builds finished. The artifacts of successful builds are:
+--> amazon-linux-hvm-docker-ce-base: AMIs were created:
+
+us-east-1: ami-079efc78
